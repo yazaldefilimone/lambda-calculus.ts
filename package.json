@@ -1,0 +1,26 @@
+{
+  "name": "type-theory.ts",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "type theory in typescript",
+  "main": "index.ts",
+  "repository": "git@github.com:yazaldefilimonepinto/typescript-starter.git",
+  "author": "Yazalde Filimone <yazaldefilimon@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node  ./dist/index.js",
+    "dev": "tsx  ./index.ts",
+    "dev:watch": "tsx watch ./index.ts",
+    "build": "tsc  ",
+    "format": "prettier --write './**/*.ts'"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.4",
+    "prettier": "^3.0.3",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=18.13.0"
+  }
+}
