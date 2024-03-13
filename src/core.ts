@@ -137,13 +137,11 @@ console.log(apply(f, x).toString());
 console.log(abstract(x, apply(f, x)).toString());
 // λx.f(x)
 console.log(abstract(f, apply(f, x)).toString());
-// λf.f(f(x))
-
+// λf.f(x)
 console.log(
     apply(x, abstract(f, abstract(x, apply(f, x, y))), z, w).toString()
 );
-// λx.λf.λx.x(f(x, y))(z, w)
-
+// λx.λf.λx.x(λf.λx.f(x,y))(z,w)
 } catch (error:any) {
   console.error("Error: " +error.message);
 }
